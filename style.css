@@ -60,29 +60,48 @@ header {
   padding: 1.75rem 4rem;
 }
 
+/* ── Logo── */
 .logo-wrap {
   display: flex;
   align-items: center;
+  gap: 0.6rem; /* Logo ilə yazı arasındakı məsafə */
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 
 .logo-wrap:hover {
-  transform: scale(1.05);
+  transform: scale(1.02); /* Üzərinə gələndə yüngülcə böyüyür */
 }
 
 .site-logo {
-  height: 32px;
+  height: 28px; /* Logonun standart hündürlüyü - buradan böyüdüb kiçildə bilərsən */
   width: auto;
   display: block;
+  object-fit: contain; /* Şəklin deformasiya olmasının qarşısını alır */
 }
 
+.logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+/* Logonun yanındakı nöqtəni sənə göndərilən logonun yaşıl rənginə (təxmini #95d600) uyğunlaşdırırıq */
+.logo-text .dot {
+  color: #95d600; /* Əvvəl var(--accent) idi, indi loqonun yaşıldır */
+}
+
+/* Telefon ekranlarında ölçüləri biraz da kiçildiririk */
 @media (max-width: 960px) {
   .site-logo {
-    height: 26px;
+    height: 24px;
+  }
+  .logo-text {
+    font-size: 0.9rem;
   }
 }
-
 .header-pill {
   display: flex;
   align-items: center;
