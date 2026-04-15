@@ -455,6 +455,55 @@ h1 {
 .bc-4 .btn-icon { background: rgba(251,191,36,.12); color: #fbbf24; }
 .bc-4:hover { box-shadow: 0 8px 30px rgba(251,191,36,.1); border-color: rgba(251,191,36,.3); }
 
+
+/* 5-ci Kart: Könüllü Səfiri (Yaşıl/Neon) */
+.bc-5 {
+    border: 1px solid rgba(46, 204, 113, 0.3); /* Emerald Green şəffaflıqla */
+    background: rgba(46, 204, 113, 0.05); /* Çox yüngül yaşıl fon */
+    transition: all 0.3s ease;
+}
+
+.bc-5:hover {
+    border-color: rgba(46, 204, 113, 0.8);
+    background: rgba(46, 204, 113, 0.1);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.15); /* Hover-də yüngül parlama */
+    transform: translateY(-2px);
+}
+
+/* İkonun fonu üçün (əgər ikonun arxasında dairəvi fon varsa) */
+.bc-5 .btn-icon {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ümumi kart strukturu üçün (əgər yoxdursa) */
+.btn-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.btn-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-sub {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
 /* ── Animations ── */
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(30px); }
