@@ -1,7 +1,7 @@
 // ==========================================
 // 1. GERİYƏ SAYIM MƏNTİQİ
 // ==========================================
-const TARGET = new Date('2026-04-18T20:00:00+04:00');
+const TARGET = new Date('2026-04-17T20:00:00+04:00');
 
 function pad(n) { return String(n).padStart(2, '0'); }
 
